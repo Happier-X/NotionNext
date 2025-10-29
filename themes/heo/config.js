@@ -57,7 +57,7 @@ const CONFIG = {
   HEO_GROUP_ICONS: [
     {
       title_1: 'HTML',
-      img_1: '/images/happier/html5.svg',
+      img_1: 'https://cdn.simpleicons.org/html5/white',
       color_1: '#E34F26',
       title_2: 'CSS3',
       img_2: '/images/heo/20237c548846044a20dad68a13c0f0e1502f074602.webp',
