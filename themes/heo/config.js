@@ -59,26 +59,50 @@ const CONFIG = {
       title_1: 'HTML',
       img_1: 'https://cdn.simpleicons.org/html5/white',
       color_1: '#E34F26',
-      title_2: 'CSS3',
-      img_2: '/images/heo/20237c548846044a20dad68a13c0f0e1502f074602.webp',
-      color_2: '#2c51db'
+      title_2: 'CSS',
+      img_2: 'https://cdn.simpleicons.org/css/white',
+      color_2: '#663399'
     },
     {
-      title_1: 'JS',
-      img_1: '/images/heo/2023786e7fc488f453d5fb2be760c96185c0075502.webp',
-      color_1: '#f7cb4f',
-      title_2: 'Git',
-      img_2: '/images/heo/2023ffa5707c4e25b6beb3e6a3d286ede4c6071102.webp',
-      color_2: '#df5b40',
+      title_1: 'JavaScript',
+      img_1: 'https://cdn.simpleicons.org/javascript/white',
+      color_1: '#F7DF1E',
+      title_2: 'TypeScript',
+      img_2: 'https://cdn.simpleicons.org/typescript/white',
+      color_2: '#3178C6'
     },
-    // {
-    //   title_1: 'Git',
-    //   img_1: '/images/heo/2023ffa5707c4e25b6beb3e6a3d286ede4c6071102.webp',
-    //   color_1: '#df5b40',
-    //   title_2: 'Rhino',
-    //   img_2: '/images/heo/20231ca53fa0b09a3ff1df89acd7515e9516173302.webp',
-    //   color_2: '#1f1f1f'
-    // }
+    {
+      title_1: 'Vue.js',
+      img_1: 'https://cdn.simpleicons.org/vuedotjs/white',
+      color_1: '#4FC08D',
+      title_2: 'React',
+      img_2: 'https://cdn.simpleicons.org/react/white',
+      color_2: '#61DAFB'
+    },
+    {
+      title_1: 'Node.js',
+      img_1: 'https://cdn.simpleicons.org/nodedotjs/white',
+      color_1: '#5FA04E',
+      title_2: 'NestJS',
+      img_2: 'https://cdn.simpleicons.org/nestjs/white',
+      color_2: '#E0234E'
+    },
+    {
+      title_1: 'Git',
+      img_1: 'https://cdn.simpleicons.org/git/white',
+      color_1: '#F05032',
+      title_2: 'GitHub',
+      img_2: 'https://cdn.simpleicons.org/github/white',
+      color_2: '#181717'
+    },
+    {
+      title_1: 'Electron',
+      img_1: 'https://cdn.simpleicons.org/electron/white',
+      color_1: '#47848F',
+      title_2: 'uni-app',
+      img_2: 'https://cdn.simpleicons.org/unpkg/white',
+      color_2: '#2B9939'
+    }
   ],
 
   // HEO_SOCIAL_CARD: true, // 是否显示右侧，点击加入社群按钮
