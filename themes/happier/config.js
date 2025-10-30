@@ -23,7 +23,7 @@ const CONFIG = {
   HEO_HERO_TITLE_3: 'HAPPIER',
   HEO_HERO_TITLE_4: '开发中',
   HEO_HERO_TITLE_5: '敬请期待',
-  HEO_HERO_TITLE_LINK: 'https://happierx.top',
+  HEO_HERO_TITLE_LINK: 'https://blog.happierx.top',
   // 英雄区遮罩文字
   HEO_HERO_COVER_TITLE: '随便逛逛',
 
@@ -50,7 +50,7 @@ const CONFIG = {
   HEO_INFO_CARD_ICON1: 'fas fa-user',
   HEO_INFO_CARD_URL2: 'https://github.com/happier-x',
   HEO_INFO_CARD_ICON2: 'fab fa-github',
-  HEO_INFO_CARD_URL3: 'https://www.happierx.top',
+  HEO_INFO_CARD_URL3: 'https://www.blog.happierx.top',
   HEO_INFO_CARD_TEXT3: '了解更多',
 
   HEO_GROUP_ICONS: [
