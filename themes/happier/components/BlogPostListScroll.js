@@ -60,7 +60,6 @@ const BlogPostListScroll = ({
 
   const targetRef = useRef(null)
   const POST_TWO_COLS = siteConfig('HEO_HOME_POST_TWO_COLS', true, CONFIG)
-  console.log(1111111111, POST_TWO_COLS)
   if (!postsToShow || postsToShow.length === 0) {
     return <BlogPostListEmpty currentSearch={currentSearch} />
   } else {
