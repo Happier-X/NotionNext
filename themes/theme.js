@@ -132,22 +132,20 @@ const getLayoutNameByPath = path => {
  * 删除多余的元素
  */
 const fixThemeDOM = () => {
-  if (!isBrowser) {
-    return
-  }
-  
-  const elements = document.querySelectorAll('[id^="theme-"]')
-  if (elements?.length > 1) {
-    for (let i = 0; i < elements.length - 1; i++) {
-      if (
-        elements[i] &&
-        elements[i].parentNode &&
-        elements[i].parentNode.contains(elements[i])
-      ) {
-        elements[i].parentNode.removeChild(elements[i])
+  if (isBrowser) {
+    const elements = document.querySelectorAll('[id^="theme-"]')
+    if (elements?.length > 1) {
+      for (let i = 0; i < elements.length - 1; i++) {
+        if (
+          elements[i] &&
+          elements[i].parentNode &&
+          elements[i].parentNode.contains(elements[i])
+        ) {
+          elements[i].parentNode.removeChild(elements[i])
+        }
       }
+      elements[0]?.scrollIntoView()
     }
-    elements[0]?.scrollIntoView()
   }
 }
 
@@ -180,13 +178,9 @@ export const initDarkMode = (updateDarkMode, defaultDarkMode) => {
   }
 
   updateDarkMode(newDarkMode)
-  
-  // 只在浏览器环境中设置 DOM 属性
-  if (isBrowser) {
-    document
-      .getElementsByTagName('html')[0]
-      .setAttribute('class', newDarkMode ? 'dark' : 'light')
-  }
+  document
+    .getElementsByTagName('html')[0]
+    .setAttribute('class', newDarkMode ? 'dark' : 'light')
 }
 
 /**
@@ -198,11 +192,6 @@ export function isPreferDark() {
     return true
   }
   if (BLOG.APPEARANCE === 'auto') {
-    // 服务器端渲染时，直接返回 false
-    if (!isBrowser) {
-      return false
-    }
-    
     // 系统深色模式或时间是夜间时，强行置为夜间模式
     const date = new Date()
     const prefersDarkMode = window.matchMedia(
@@ -223,9 +212,6 @@ export function isPreferDark() {
  * @returns {*}
  */
 export const loadDarkModeFromLocalStorage = () => {
-  if (!isBrowser) {
-    return null
-  }
   return localStorage.getItem('darkMode')
 }
 
@@ -234,8 +220,5 @@ export const loadDarkModeFromLocalStorage = () => {
  * @param newTheme
  */
 export const saveDarkModeToLocalStorage = newTheme => {
-  if (!isBrowser) {
-    return
-  }
   localStorage.setItem('darkMode', newTheme)
 }
